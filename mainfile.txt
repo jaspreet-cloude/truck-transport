@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f4f0">
+  <meta name="description" content="Dependable, on-time freight transportation across the country. Get a straightforward quote from Northline Freight.">
+  <title>Northline Freight — Moving business forward</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18221e;
+      --muted: #64706a;
+      --paper: #f5f4f0;
+      --white: #fffefa;
+      --green: #285c46;
+      --green-dark: #1e4435;
+      --lime: #d8ee86;
+      --line: #e4e5dd;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Segoe UI", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }
+
+    .topbar {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(24, 34, 30, .09);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 750; letter-spacing: -.7px; }
+    .brand-mark {
+      display: grid; width: 34px; height: 34px; place-items: center;
+      border-radius: 10px; background: var(--green); color: white;
+    }
+    .brand-mark svg { width: 20px; height: 20px; }
+    .nav-links { display: flex; align-items: center; gap: 34px; color: #526059; font-size: 13px; font-weight: 550; }
+    .nav-links a:hover, .footer-links a:hover { color: var(--green); }
+    .nav-cta, .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      border: 0; border-radius: 7px; background: var(--green); color: white;
+      font-size: 13px; font-weight: 650; transition: background .2s, transform .2s;
+    }
+    .nav-cta { padding: 12px 17px; }
+    .button { min-height: 49px; padding: 0 21px; cursor: pointer; }
+    .nav-cta:hover, .button:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .button svg { width: 16px; height: 16px; }
+
+    .hero { padding: 65px 0 52px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 36px; }
+    .eyebrow {
+      display: flex; align-items: center; gap: 9px; margin: 0 0 20px;
+      color: var(--green); font-size: 11px; font-weight: 750; letter-spacing: 1.7px; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--green); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 520px; margin-bottom: 21px; font-family: var(--serif);
+      font-size: clamp(48px, 6vw, 76px); font-weight: 500; line-height: .99; letter-spacing: -3.3px;
+    }
+    h1 em { color: var(--green); font-weight: 500; }
+    .hero-copy { max-width: 430px; margin-bottom: 28px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
+    .text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 650; }
+    .text-link svg { width: 16px; height: 16px; transition: transform .2s; }
+    .text-link:hover svg { transform: translateX(4px); }
+    .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 34px; color: var(--muted); font-size: 11px; }
+    .avatars { display: flex; padding-left: 3px; }
+    .avatar {
+      display: grid; width: 27px; height: 27px; margin-left: -4px; place-items: center;
+      border: 2px solid var(--paper); border-radius: 50%; background: #d8c9ae;
+      color: #354338; font-size: 8px; font-weight: 750;
+    }
+    .avatar:nth-child(2) { background: #b9cfbb; }
+    .avatar:nth-child(3) { background: #e4bca5; }
+    .avatar:nth-child(4) { background: #d1c4df; }
+    .hero-note strong { color: var(--ink); }
+
+    .hero-art {
+      position: relative; min-height: 400px; display: flex; align-items: center; justify-content: center;
+      border-radius: 13px; background: #e6e9dc; isolation: isolate;
+    }
+    .hero-art::before {
+      position: absolute; z-index: -1; top: 34px; right: 35px; width: 78%; height: 78%;
+      border: 1px solid rgba(40, 92, 70, .17); border-radius: 50%; content: "";
+    }
+    .art-tag {
+      position: absolute; top: 23px; left: 23px; display: flex; align-items: center; gap: 8px;
+      padding: 9px 12px; border: 1px solid rgba(24, 34, 30, .08); border-radius: 5px;
+      background: rgba(255, 254, 250, .86); color: #3c4b42; font-size: 10px; font-weight: 650;
+    }
+    .live-dot { width: 7px; height: 7px; border-radius: 50%; background: #6e9c59; box-shadow: 0 0 0 3px #e4efd9; }
+    .art-caption {
+      position: absolute; right: 21px; bottom: 19px; color: #65736a;
+      font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+    }
+    .truck-illustration { width: 100%; max-width: 600px; height: auto; padding: 28px 10px 15px; }
+
+    .trustbar { padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .trust-label { color: #768079; font-size: 10px; letter-spacing: 1.1px; line-height: 1.7; text-transform: uppercase; }
+    .trust-logos { display: flex; flex: 1; align-items: center; justify-content: flex-end; gap: clamp(22px, 5vw, 64px); }
+    .trust-logo { color: #798179; font-family: var(--serif); font-size: 18px; font-weight: 700; letter-spacing: -.7px; }
+    .trust-logo:nth-child(2) { font-family: var(--sans); font-size: 13px; font-weight: 800; letter-spacing: 1.2px; }
+    .trust-logo:nth-child(3) { font-size: 16px; font-style: italic; }
+    .trust-logo:nth-child(4) { font-family: var(--sans); font-size: 14px; font-weight: 800; letter-spacing: 2px; }
+
+    .services { padding: 91px 0 96px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 36px; }
+    .section-head .eyebrow { margin-bottom: 13px; }
+    h2 { margin-bottom: 0; font-family: var(--serif); font-size: clamp(34px, 4vw, 47px); font-weight: 500; letter-spacing: -1.5px; line-height: 1.1; }
+    .section-intro { max-width: 350px; margin: 0 0 4px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .service-card { min-height: 220px; padding: 25px 24px 23px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 254, 250, .65); }
+    .service-icon {
+      display: grid; width: 39px; height: 39px; margin-bottom: 27px; place-items: center;
+      border-radius: 8px; background: #e8eddf; color: var(--green);
+    }
+    .service-icon svg { width: 19px; height: 19px; }
+    .service-card h3 { margin-bottom: 9px; font-family: var(--serif); font-size: 21px; font-weight: 500; letter-spacing: -.3px; }
+    .service-card p { margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+    .promise { padding: 62px 0; background: #e9ecdf; }
+    .promise-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; }
+    .promise .eyebrow { margin-bottom: 15px; }
+    .promise h2 { max-width: 455px; }
+    .promise-copy { max-width: 435px; margin: 17px 0 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .stat { padding-left: 17px; border-left: 1px solid #cbd3c3; }
+    .stat strong { display: block; margin-bottom: 5px; color: var(--green); font-family: var(--serif); font-size: 34px; font-weight: 500; letter-spacing: -1.5px; }
+    .stat span { color: var(--muted); font-size: 10px; line-height: 1.5; }
+
+    .quote-section { padding: 91px 0; }
+    .quote-panel {
+      display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; padding: 43px;
+      border-radius: 10px; background: var(--green); color: white;
+    }
+    .quote-panel .eyebrow { color: var(--lime); }
+    .quote-panel .eyebrow::before { background: var(--lime); }
+    .quote-panel h2 { max-width: 380px; margin-bottom: 14px; font-size: 39px; }
+    .quote-panel .quote-copy { max-width: 355px; margin-bottom: 0; color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.8; }
+    .quote-form { display: grid; grid-template-columns: 1fr 1fr; align-content: center; gap: 13px; }
+    .field { display: flex; flex-direction: column; gap: 7px; }
+    .field label { color: rgba(255,255,255,.8); font-size: 10px; font-weight: 600; }
+    .field input, .field select {
+      width: 100%; min-height: 43px; padding: 0 12px; border: 1px solid rgba(255,255,255,.2);
+      border-radius: 5px; outline: none; background: rgba(255,255,255,.1); color: white; font-size: 12px;
+    }
+    .field input::placeholder { color: rgba(255,255,255,.5); }
+    .field select { color: rgba(255,255,255,.84); }
+    .field select option { color: var(--ink); }
+    .field input:focus, .field select:focus { border-color: var(--lime); box-shadow: 0 0 0 2px rgba(216,238,134,.18); }
+    .quote-form .button { min-height: 43px; align-self: end; background: var(--lime); color: var(--ink); font-size: 12px; }
+    .quote-form .button:hover { background: #e5f4ad; }
+    .form-message { grid-column: 1 / -1; min-height: 16px; margin: 0; color: var(--lime); font-size: 11px; }
+
+    footer { padding: 24px 0; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .footer-copy { margin: 0; color: #7c847e; font-size: 10px; }
+    .footer-links { display: flex; gap: 22px; color: #626d65; font-size: 10px; }
+
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 40px, 620px); }
+      .nav-links { gap: 18px; }
+      .hero { padding-top: 48px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-copy { max-width: 500px; }
+      .hero-art { min-height: 340px; }
+      .trust-inner { align-items: flex-start; flex-direction: column; gap: 17px; }
+      .trust-logos { width: 100%; justify-content: space-between; gap: 14px; }
+      .services { padding: 70px 0; }
+      .promise-grid { grid-template-columns: 1fr; gap: 34px; }
+      .quote-panel { grid-template-columns: 1fr; gap: 30px; padding: 34px; }
+    }
+    @media (max-width: 540px) {
+      .wrap { width: calc(100% - 36px); }
+      .topbar { height: 66px; }
+      .brand { font-size: 15px; }
+      .nav-links { display: none; }
+      .nav-cta { padding: 10px 12px; font-size: 11px; }
+      .hero { padding: 42px 0 38px; }
+      h1 { font-size: 53px; letter-spacing: -2.5px; }
+      .hero-art { min-height: 265px; }
+      .hero-note { flex-wrap: wrap; }
+      .trust-logo { font-size: 15px; }
+      .trust-logo:nth-child(2) { font-size: 10px; }
+      .trust-logo:nth-child(3) { font-size: 13px; }
+      .trust-logo:nth-child(4) { font-size: 11px; letter-spacing: 1px; }
+      .section-head { align-items: flex-start; flex-direction: column; gap: 14px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 0; }
+      .service-icon { margin-bottom: 19px; }
+      .stats { gap: 7px; }
+      .stat { padding-left: 10px; }
+      .stat strong { font-size: 28px; }
+      .stat span { font-size: 9px; }
+      .quote-section { padding: 65px 0; }
+      .quote-panel { padding: 27px 22px; }
+      .quote-panel h2 { font-size: 34px; }
+      .quote-form { grid-template-columns: 1fr; }
+      .quote-form .button { width: 100%; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Northline Freight home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.8" fill="currentColor"/><circle cx="17.5" cy="18" r="1.8" fill="currentColor"/></svg>
+        </span>
+        Northline Freight
+      </a>
+      <div class="nav-links">
+        <a href="#services">Our services</a>
+        <a href="#about">Why Northline</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Get a freight quote <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid wrap">
+        <div class="hero-content">
+          <p class="eyebrow">Freight that moves you forward</p>
+          <h1>Your cargo.<br>Your schedule.<br><em>Our road.</em></h1>
+          <p class="hero-copy">From the first mile to the last, we make freight feel a little less complicated. Reliable people, thoughtful planning, and deliveries you can count on.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Plan a shipment
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="text-link" href="#services">Explore our services <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatars" aria-hidden="true">
+              <span class="avatar">JM</span><span class="avatar">AL</span><span class="avatar">RK</span><span class="avatar">+</span>
+            </div>
+            <span><strong>Good people, great miles.</strong> A team that picks up the phone.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Illustration of a Northline Freight truck on an open road">
+          <div class="art-tag"><span class="live-dot"></span> On the road, on your side</div>
+          <svg class="truck-illustration" viewBox="0 0 650 380" fill="none" aria-hidden="true">
+            <path d="M79 292c92-27 152-18 237 5 81 21 156 15 263-18" stroke="#C8D2BF" stroke-width="2"/>
+            <path d="M101 310h446" stroke="#F7F7EF" stroke-width="3" stroke-linecap="round"/>
+            <path d="M151 128c33-35 63-54 97-66m-31 75c20-19 43-31 68-38m166-10c29 16 49 37 64 62m-41-75c23 11 42 27 58 46" stroke="#CBD4C3" stroke-width="2" stroke-linecap="round"/>
+            <path d="M89 252c30-31 65-49 106-53m-134 77c28-22 56-34 88-37m365-31c40 4 75 19 105 45m-83-70c30 6 55 17 79 34" stroke="#BCC9B6" stroke-width="2" stroke-linecap="round"/>
+            <path d="M135 282h298V154c0-7-5-12-12-12H147c-7 0-12 5-12 12v128Z" fill="#FFFDF7" stroke="#254C3B" stroke-width="3"/>
+            <path d="M159 164h252v91H159z" fill="#E9EDE1"/>
+            <path d="M184 181h202v8H184zm0 18h167v5H184zm0 13h139v5H184z" fill="#D6DFD1"/>
+            <path d="M134 265h301v18H134z" fill="#285C46"/>
+            <path d="M433 204h75c12 0 21 7 25 18l17 48v13H433V204Z" fill="#285C46" stroke="#254C3B" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M454 216h47c6 0 10 3 12 9l12 34h-71v-43Z" fill="#C7D8C6"/>
+            <path d="M454 216v43m59 0h-59" stroke="#254C3B" stroke-width="2"/>
+            <path d="M434 266h113v17H434z" fill="#214B38"/>
+            <path d="M522 272h16v6h-16z" fill="#E3E98B"/>
+            <path d="M146 283h404v11H146z" fill="#1D2923"/>
+            <path d="M177 289c0-20 15-35 34-35s34 15 34 35" fill="#26332B"/>
+            <circle cx="211" cy="289" r="19" fill="#303D34"/><circle cx="211" cy="289" r="9" fill="#D8DCCF"/>
+            <path d="M454 289c0-20 15-35 34-35s34 15 34 35" fill="#26332B"/>
+            <circle cx="488" cy="289" r="19" fill="#303D34"/><circle cx="488" cy="289" r="9" fill="#D8DCCF"/>
+            <path d="M257 232c24-12 59-12 83 0-24 12-59 12-83 0Z" fill="#D8EE86"/>
+            <path d="m277 232 9 8 20-17" stroke="#285C46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M82 301h472" stroke="#A8B6A2" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="art-caption">Steady hands. Open roads.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trustbar" aria-label="Trusted by growing businesses">
+      <div class="trust-inner wrap">
+        <span class="trust-label">In good company<br>on every mile</span>
+        <div class="trust-logos" aria-label="Our partners">
+          <span class="trust-logo">evergrove</span>
+          <span class="trust-logo">FIELD &amp; FORM</span>
+          <span class="trust-logo">Common Ground</span>
+          <span class="trust-logo">HARVEST</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services wrap" id="services">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The right fit for every freight</p>
+          <h2>More than a truck<br>at your loading dock.</h2>
+        </div>
+        <p class="section-intro">Every shipment is different. We bring the right equipment, the right route, and the right people to get yours there.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h11v11H3zM14 9h4l3 3v5h-7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <h3>Full truckload</h3>
+          <p>Your freight has a truck all to itself. Direct routes, fewer stops, and the space your shipment needs.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="18" cy="17" r="2" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <h3>Less-than-truckload</h3>
+          <p>Only pay for the space you use. A smart, dependable option for smaller shipments that still matter.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18m0-18 6 6m-6-6L6 9m12 6-6 6-6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <h3>Expedited shipping</h3>
+          <p>When time is the whole point, we find the fast, careful way through—with updates along the way.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="promise" id="about">
+      <div class="promise-grid wrap">
+        <div>
+          <p class="eyebrow">A little more human</p>
+          <h2>Good logistics start with good people.</h2>
+          <p class="promise-copy">We believe freight should feel straightforward. That means clear communication, practical answers, and a real person ready to help whenever the road gets interesting.</p>
+        </div>
+        <div class="stats" aria-label="Northline Freight at a glance">
+          <div class="stat"><strong>98%</strong><span>on-time delivery<br>across our network</span></div>
+          <div class="stat"><strong>24/7</strong><span>shipment support<br>from real people</span></div>
+          <div class="stat"><strong>1,200+</strong><span>trusted carrier<br>partners nationwide</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" id="contact">
+      <div class="quote-panel wrap">
+        <div>
+          <p class="eyebrow">Let's get moving</p>
+          <h2>Tell us where it needs to go.</h2>
+          <p class="quote-copy">Share a few details and our team will be in touch to talk through your shipment. No pressure, just a helpful human and a clear next step.</p>
+        </div>
+        <form class="quote-form" id="quote-form">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jordan Miller" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" placeholder="jordan@company.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="freight">What are you shipping?</label>
+            <select id="freight" name="freight" required>
+              <option value="" disabled selected>Select freight type</option>
+              <option>Full truckload</option>
+              <option>Less-than-truckload</option>
+              <option>Expedited shipping</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="destination">Where is it going?</label>
+            <input id="destination" name="destination" type="text" placeholder="City, state" required>
+          </div>
+          <button class="button" type="submit">Request a conversation <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.8" fill="currentColor"/><circle cx="17.5" cy="18" r="1.8" fill="currentColor"/></svg></span>
+        Northline Freight
+      </a>
+      <p class="footer-copy">© <span id="year">2026</span> Northline Freight. Moving business forward.</p>
+      <div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+  <script>
+    const quoteForm = document.getElementById("quote-form");
+    const formMessage = document.getElementById("form-message");
+
+    quoteForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!quoteForm.reportValidity()) return;
+      const name = quoteForm.elements.name.value.trim();
+      formMessage.textContent = `Thanks, ${name}. Your details are ready — our team will be in touch soon.`;
+      quoteForm.reset();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
