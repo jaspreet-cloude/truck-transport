@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f5f4f0">
-  <meta name="description" content="Bawa's Truck Transport, owned by Mandeep Singh and Simran Kaur, provides dependable freight transportation in California.">
-  <title>Bawa's Truck Transport — Moving business forward</title>
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Get in touch with Bawa's Truck Transport, owned by Mandeep Singh and Simran Kaur in California. Call +1 (929) 866-2612.">
+  <title>Bawa's Truck Transport | California</title>
   <style>
     :root {
       color-scheme: light;
@@ -225,7 +225,7 @@
         <a href="#about">About us</a>
         <a href="#contact">Contact</a>
       </div>
-      <a class="nav-cta" href="#contact">Get a freight quote <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="#contact">Contact our team <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -298,26 +298,26 @@
     <section class="services wrap" id="services">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Transportation solutions</p>
-          <h2>A better way to move your freight.</h2>
+          <p class="eyebrow">Bawa's Truck Transport</p>
+          <h2>Transportation, with people at the center.</h2>
         </div>
-        <p class="section-intro">From a full load to a smaller shipment, let's find a transportation option that fits your timeline and cargo.</p>
+        <p class="section-intro">Have something to move? Start with a conversation. We’ll learn about your shipment and help you discuss the next step.</p>
       </div>
       <div class="service-grid">
         <article class="service-card">
           <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h11v11H3zM14 9h4l3 3v5h-7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/></svg></span>
-          <h3>Full truckload</h3>
-          <p>Dedicated space for your shipment, with a route planned around the load and its destination.</p>
+          <h3>Truck transportation</h3>
+          <p>Tell us what you need moved and where it needs to go. We’ll talk through your transportation request.</p>
         </article>
         <article class="service-card">
           <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="18" cy="17" r="2" stroke="currentColor" stroke-width="1.7"/></svg></span>
-          <h3>Less-than-truckload</h3>
-          <p>A flexible option for shipments that need less than a full trailer. Tell us about your freight for details.</p>
+          <h3>Shipment planning</h3>
+          <p>Share the shipment details, pickup point, destination, and timing so we can discuss your needs.</p>
         </article>
         <article class="service-card">
           <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18m0-18 6 6m-6-6L6 9m12 6-6 6-6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-          <h3>Expedited shipping</h3>
-          <p>Have a time-sensitive shipment? Call us to discuss the schedule and available transportation options.</p>
+          <h3>Direct communication</h3>
+          <p>Connect with our team directly by phone to ask a question or start a conversation about your load.</p>
         </article>
       </div>
     </section>
