@@ -147,6 +147,8 @@
     .promise-copy { max-width: 435px; margin: 17px 0 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
     .owner-card { padding: 29px; border: 1px solid rgba(40, 92, 70, .13); border-radius: 12px; background: rgba(255, 254, 250, .75); }
     .owner-card-label { margin-bottom: 19px; color: var(--green); font-size: 10px; font-weight: 750; letter-spacing: 1.4px; text-transform: uppercase; }
+    .owner-profile { display: grid; grid-template-columns: minmax(125px, .8fr) 1.2fr; align-items: center; gap: 16px; }
+    .owner-photo { display: block; width: 100%; aspect-ratio: 3 / 4; border-radius: 9px; object-fit: cover; object-position: center 42%; }
     .owner-list { display: grid; gap: 12px; }
     .owner { display: flex; align-items: center; gap: 13px; padding: 12px; border-radius: 8px; background: white; }
     .owner-initial { display: grid; width: 40px; height: 40px; flex: 0 0 40px; place-items: center; border-radius: 50%; background: #e8eddf; color: var(--green); font-family: var(--serif); font-size: 15px; }
@@ -204,6 +206,9 @@
       .quote-section { padding: 65px 0; }
       .quote-panel { padding: 27px 22px; }
       .owner-card { padding: 21px; }
+      .owner-profile { grid-template-columns: minmax(100px, .8fr) 1.2fr; gap: 10px; }
+      .owner-list { gap: 8px; }
+      .owner { gap: 8px; padding: 10px 8px; }
       .footer-inner { align-items: flex-start; flex-direction: column; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -330,10 +335,13 @@
           <p class="promise-copy">Mandeep Singh and Simran Kaur lead Bawa's Truck Transport. We believe arranging transportation should feel straightforward: start with a conversation, share the details, and make a plan for your shipment.</p>
         </div>
         <div class="owner-card">
-          <p class="owner-card-label">Your contacts</p>
-          <div class="owner-list">
-            <div class="owner"><span class="owner-initial" aria-hidden="true">MS</span><div><strong>Mandeep Singh</strong><span>Owner</span></div></div>
-            <div class="owner"><span class="owner-initial" aria-hidden="true">SK</span><div><strong>Simran Kaur</strong><span>Owner</span></div></div>
+          <p class="owner-card-label">The people behind the business</p>
+          <div class="owner-profile">
+            <img class="owner-photo" src="owner-photo.png" alt="Owner of Bawa's Truck Transport">
+            <div class="owner-list">
+              <div class="owner"><span class="owner-initial" aria-hidden="true">MS</span><div><strong>Mandeep Singh</strong><span>Owner</span></div></div>
+              <div class="owner"><span class="owner-initial" aria-hidden="true">SK</span><div><strong>Simran Kaur</strong><span>Owner</span></div></div>
+            </div>
           </div>
         </div>
       </div>
