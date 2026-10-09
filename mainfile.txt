@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f4f0">
-  <meta name="description" content="Dependable, on-time freight transportation across the country. Get a straightforward quote from Northline Freight.">
-  <title>Northline Freight — Moving business forward</title>
+  <meta name="description" content="Bawa's Truck Transport, owned by Mandeep Singh and Simran Kaur, provides dependable freight transportation in California.">
+  <title>Bawa's Truck Transport — Moving business forward</title>
   <style>
     :root {
       color-scheme: light;
@@ -223,15 +223,15 @@
 <body>
   <header class="topbar">
     <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Northline Freight home">
+      <a class="brand" href="#home" aria-label="Bawa's Truck Transport home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.8" fill="currentColor"/><circle cx="17.5" cy="18" r="1.8" fill="currentColor"/></svg>
         </span>
-        Northline Freight
+        Bawa's Truck Transport
       </a>
       <div class="nav-links">
         <a href="#services">Our services</a>
-        <a href="#about">Why Northline</a>
+        <a href="#about">Why Bawa's</a>
         <a href="#contact">Contact</a>
       </div>
       <a class="nav-cta" href="#contact">Get a freight quote <span aria-hidden="true">↗</span></a>
@@ -259,7 +259,7 @@
           </div>
         </div>
 
-        <div class="hero-art" role="img" aria-label="Illustration of a Northline Freight truck on an open road">
+        <div class="hero-art" role="img" aria-label="Illustration of a Bawa's Truck Transport truck on an open road">
           <div class="art-tag"><span class="live-dot"></span> On the road, on your side</div>
           <svg class="truck-illustration" viewBox="0 0 650 380" fill="none" aria-hidden="true">
             <path d="M79 292c92-27 152-18 237 5 81 21 156 15 263-18" stroke="#C8D2BF" stroke-width="2"/>
@@ -335,7 +335,7 @@
           <h2>Good logistics start with good people.</h2>
           <p class="promise-copy">We believe freight should feel straightforward. That means clear communication, practical answers, and a real person ready to help whenever the road gets interesting.</p>
         </div>
-        <div class="stats" aria-label="Northline Freight at a glance">
+        <div class="stats" aria-label="Bawa's Truck Transport at a glance">
           <div class="stat"><strong>98%</strong><span>on-time delivery<br>across our network</span></div>
           <div class="stat"><strong>24/7</strong><span>shipment support<br>from real people</span></div>
           <div class="stat"><strong>1,200+</strong><span>trusted carrier<br>partners nationwide</span></div>
@@ -349,6 +349,7 @@
           <p class="eyebrow">Let's get moving</p>
           <h2>Tell us where it needs to go.</h2>
           <p class="quote-copy">Share a few details and our team will be in touch to talk through your shipment. No pressure, just a helpful human and a clear next step.</p>
+          <p class="quote-copy"><strong>Owners:</strong> Mandeep Singh and Simran Kaur<br><strong>Location:</strong> California<br><strong>Phone:</strong> <a href="tel:+19298662612">+1 (929) 866-2612</a></p>
         </div>
         <form class="quote-form" id="quote-form">
           <div class="field">
@@ -384,9 +385,9 @@
     <div class="footer-inner wrap">
       <a class="brand" href="#home">
         <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.8" fill="currentColor"/><circle cx="17.5" cy="18" r="1.8" fill="currentColor"/></svg></span>
-        Northline Freight
+        Bawa's Truck Transport
       </a>
-      <p class="footer-copy">© <span id="year">2026</span> Northline Freight. Moving business forward.</p>
+      <p class="footer-copy">© <span id="year">2026</span> Bawa's Truck Transport. Moving business forward.</p>
       <div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
     </div>
   </footer>
